@@ -64,7 +64,7 @@ function slugify(name) {
     .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 function withImages(list) {
-  return list.map((m) => ({ ...m, image: `/team/${slugify(m.name)}.jpg` }));
+  return list.map((m) => ({ ...m, image: `team/${slugify(m.name)}.jpg` }));
 }
 
 const facultyAdvisors = withImages([

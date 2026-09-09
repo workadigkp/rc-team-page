@@ -6,7 +6,7 @@
   <title>Robotics Club, MMMUT — Official Team</title>
   <meta name="description" content="Meet the innovators, engineers, and visionaries driving robotics and automation at Madan Mohan Malaviya University of Technology, Gorakhpur." />
 
-  <link rel="icon" type="image/png" href="/rc-logo.png" />
+  <link rel="icon" type="image/png" href="./rc-logo.png" />
 
   <!-- Fonts & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,8 +43,7 @@
     @font-face {
       font-family: 'Space Ranger';
       src: local('Space Ranger'),
-           url('fonts/spaceranger.ttf') format('truetype'),
-           url('/fonts/spaceranger.ttf') format('truetype');
+           url('fonts/spaceranger.ttf') format('truetype');
       font-weight: 400;
       font-style: normal;
       font-display: swap;
@@ -52,8 +51,7 @@
     @font-face {
       font-family: 'Space Ranger';
       src: local('Space Ranger Bold'),
-           url('fonts/spacerangerbold.ttf') format('truetype'),
-           url('/fonts/spacerangerbold.ttf') format('truetype');
+           url('fonts/spacerangerbold.ttf') format('truetype');
       font-weight: 700;
       font-style: normal;
       font-display: swap;
@@ -147,7 +145,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
         <div class="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center border border-[#23272F] bg-[#14171D] p-1 shadow-md shadow-[#C97C3E]/10">
-          <img src="/rc-logo.png" alt="Robotics Club MMMUT Logo" class="w-full h-full object-contain" />
+          <img src="./rc-logo.png" alt="Robotics Club MMMUT Logo" class="w-full h-full object-contain" />
         </div>
         <div>
           <span class="font-space-ranger text-base tracking-wider text-white block leading-none">Robotics Club</span>
@@ -167,7 +165,7 @@
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse mr-1.5"></span>
           Active Team
         </span>
-        <a href="/team-preview.html" class="text-xs text-[#9BA1AC] hover:text-[#C97C3E] transition border border-[#23272F] px-2.5 py-1 rounded-md hidden sm:inline-block">
+        <a href="team-preview.html" class="text-xs text-[#9BA1AC] hover:text-[#C97C3E] transition border border-[#23272F] px-2.5 py-1 rounded-md hidden sm:inline-block">
           Raw Preview
         </a>
       </div>
@@ -391,7 +389,7 @@
         <a href="#final-year" class="hover:text-white transition">Final Year</a>
         <a href="#third-year" class="hover:text-white transition">Third Year</a>
         <a href="#second-year" class="hover:text-white transition">Second Year</a>
-        <a href="/team-preview.html" class="hover:text-[#C97C3E] transition">Raw Preview</a>
+        <a href="team-preview.html" class="hover:text-[#C97C3E] transition">Raw Preview</a>
       </div>
     </div>
   </footer>
@@ -407,7 +405,7 @@
       return list.map(m => ({
         ...m,
         category: category,
-        image: `/team/${slugify(m.name)}.jpg`
+        image: `team/${slugify(m.name)}.jpg`
       }));
     }
 

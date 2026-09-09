@@ -28,7 +28,7 @@ function slugify(name) {
 function withImages(members) {
   return members.map((member) => ({
     ...member,
-    image: `/team/${slugify(member.name)}.jpg`,
+    image: `team/${slugify(member.name)}.jpg`,
   }));
 }
 
