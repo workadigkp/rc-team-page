@@ -1,7 +1,7 @@
 # Robotics Club, MMMUT — Team Section
 
 Drop-in team page: header + four horizontally-marqueeing sections
-(Faculty Advisors, Final Year, Third Year, Second Year Members).
+(Faculties, Final Year, Third Year, Second Year Members).
 
 ## Files
 

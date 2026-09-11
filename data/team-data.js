@@ -28,13 +28,16 @@ function slugify(name) {
 function withImages(members) {
   return members.map((member) => ({
     ...member,
-    image: `team/${slugify(member.name)}.jpg`,
+    image: member.image || `team/${slugify(member.name)}.jpg`,
   }));
 }
 
 export const facultyAdvisors = withImages([
-  { name: "Dr. Prince Kumar Singh", role: "Faculty Advisor", department: "" },
-  { name: "Dr. Vijay Shanker Chaudhary", role: "Faculty Advisor", department: "" },
+  { name: "Prof. B.K. Pandey", role: "Faculty", department: "", image: "team/bk-pandey.jpg", category: "Faculty" },
+  { name: "Dr. Pallav Gupta", role: "Faculty", department: "", image: "team/pallav-gupta.jpg", category: "Faculty" },
+  { name: "Dr. Rajan Mishra", role: "Faculty", department: "", image: "team/rajan-mishra.jpg", category: "Faculty" },
+  { name: "Dr. Prince Kumar Singh", role: "Faculty", department: "", category: "Faculty" },
+  { name: "Dr. Vijay Shanker Chaudhary", role: "Faculty", department: "", category: "Faculty" },
 ]);
 
 export const finalYearMembers = withImages([

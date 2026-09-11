@@ -20,7 +20,7 @@ export default function TeamPage() {
       <TeamHeader />
 
       <TeamSection
-        title="Faculty Advisors"
+        title="Faculties"
         members={facultyAdvisors}
         direction="left"
       />
